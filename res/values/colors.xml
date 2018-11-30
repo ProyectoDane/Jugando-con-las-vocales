@@ -1,0 +1,14 @@
+<resources>
+	<color name="pressed_apptheme">#CCBFE737</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="phonological_awareness_correct_image_background">#33B5E5</color>
+	<color name="app_background">#33B5E5</color>
+	<color name="visual_perception_selected_vowel_background">#4Dffffff</color>
+	<color name="visual_perception_vowel_thumb_background">#CCffffff</color>
+	<color name="vowel_color">#A2BB4D</color>	
+	<color name="graphomotor_vowel_thumb_background">#59ffffff</color>
+	<color name="graphomotor_vowel_text_background">#D3E47C</color>
+	<color name="graphomotor_vowel_text_border">#596A22</color>
+	<color name="graphomotor_vowel_text_arrow">#0C0A12</color>
+	<color name="phonological_awareness_selected_vowel_background">#80ffffff</color>
+</resources>

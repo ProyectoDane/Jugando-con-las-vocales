@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JUGANDO CON LAS VOCALES</string>
+    <string name="image_button">Image button</string>
+    <string name="title_activity_phonological_awareness">CONCIENCIA FONOLÓGICA</string>
+    <string name="action_settings">CONFIGURACIÓN</string>
+    <string name="A">A</string>
+    <string name="I">I</string>
+    <string name="O">O</string>
+    <string name="U">U</string>
+    <string name="E">E</string>
+    <string name="LevelOne">NIVEL 1</string>
+    <string name="LevelTwo">NIVEL 2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="vowel_selected">vocal_seleccionada</string>
+    <string name="title_activity_phonological_awareness_level_one">NIVEL 1</string>
+    <string name="title_activity_phonological_awareness_level_two">NIVEL 2</string>
+    <string name="title_activity_visual_perception">PERCEPCIÓN VISUAL</string>
+    <string name="title_activity_graphomotor">GRAFOMOTRICIDAD                    </string>
+    <string name="title_activity_phonological_awareness_select_vowel">CONCIENCIA FONOLÓGICA</string>
+
+</resources>

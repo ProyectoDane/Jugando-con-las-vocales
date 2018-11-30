@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_visual_perception_textview_width">75dp</dimen>
+    <dimen name="view_visual_perception_textview_height">75dp</dimen>
+    <dimen name="phonological_awareness_image_height">80dp</dimen>
+</resources>

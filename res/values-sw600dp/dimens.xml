@@ -1,0 +1,26 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+    
+    <dimen name="phonological_awareness_vowel_vowel_text_size">130sp</dimen>
+    <dimen name="phonological_awareness_image_height">215dp</dimen>
+    <dimen name="phonological_awareness_image_width">255dp</dimen>
+    
+    <dimen name="visual_perception_vowel_text_size">250sp</dimen>
+	<dimen name="view_visual_perception_textview_size">150sp</dimen>
+	<dimen name="view_visual_perception_textview_width">225dp</dimen>
+    <dimen name="view_visual_perception_textview_height">220dp</dimen>
+    
+    <item name="view_visual_perception_weight" type="dimen" format="float">0.6</item>
+    <item name="phonological_awareness_vowel_weight" type="dimen" format="float">0.2</item>
+    
+    <dimen name="generic_text_button_size">50dp</dimen>
+    
+    
+    
+    <item name="main_weight" type="dimen" format="float">16</item>
+    <item name="main_lateral_weight" type="dimen" format="float">2</item>
+</resources>
