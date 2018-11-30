@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/activity_main_background"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal"
+    android:weightSum="20"
+    android:baselineAligned="false"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="@dimen/main_lateral_weight"
+        android:background="@null" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="@dimen/main_weight" >
+
+        <GridLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:orientation="horizontal"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="false"
+            android:background="@null" >
+
+            <Button
+                android:id="@+id/phonological_awareness_btn"
+                style="@style/GenericButton"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="@string/title_activity_phonological_awareness"
+                android:drawableBottom="@drawable/phonological_awareness_btn" />
+
+            <Button
+                android:id="@+id/visual_perception_btn"
+                style="@style/GenericButton"
+                android:layout_width="match_parent"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/title_activity_visual_perception"
+                android:drawableBottom="@drawable/visual_perception_btn" />
+
+            <Button
+                android:id="@+id/graphomotor_btn"
+                style="@style/GenericButton"
+                android:layout_width="match_parent"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_row="2"     
+                android:drawableBottom="@drawable/graphomotor_btn"
+                android:text="@string/title_activity_graphomotor" />
+
+        </GridLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="@dimen/main_lateral_weight"
+        android:background="@null" />
+
+</LinearLayout>

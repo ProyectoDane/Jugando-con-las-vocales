@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/activity_graphomotor_background"
+    tools:context=".GraphomotorActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.90"
+            android:background="@null"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null" >
+
+                <LinearLayout
+                    android:id="@+id/graphomotor_touch_content_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/graphomotor_canvas_vowel_border"
+                    android:orientation="vertical" >
+
+                    <!--
+                          <com.iceberg.playingwithvowels.helpers.TouchVowelView
+                        android:id="@+id/touchVowelView1"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp" /> -->
+                        
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/graphomotor_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/graphomotor_touch_content_view"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignRight="@+id/graphomotor_touch_content_view"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="false"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="bottom|right"
+                    android:src="@drawable/ic_ok"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/graphomotor_next"
+        style="@style/NextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/vowel_selected" />
+
+</RelativeLayout>

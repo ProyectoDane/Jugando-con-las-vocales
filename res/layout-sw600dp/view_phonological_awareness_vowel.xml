@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:background="@drawable/activity_phonological_awareness_background"
+    android:id="@+id/phonological_awareness_vowel_layout_main"
+    android:paddingTop="0dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/phonological_awareness_vowel_weight" 
+        android:id="@+id/phonological_awareness_vowel_layout_first_child"
+        android:background="@color/phonological_awareness_selected_vowel_background"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:id="@+id/phonological_awareness_vowel_vowel_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center_horizontal|top"            
+            android:textAlignment="center"
+            android:textColor="@color/vowel_color"
+            android:textSize="@dimen/phonological_awareness_vowel_vowel_text_size" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/phonological_awareness_vowel_layout_second_child" 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"        
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1" 
+            android:background="@null">
+
+            <RelativeLayout
+                android:id="@+id/phonological_awareness_vowel_gridview_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/phonological_awareness_vowel_gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="1"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp" />
+
+                <RelativeLayout
+                    android:id="@+id/phonological_awareness_vowel_expanded_image_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/phonological_awareness_image_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/phonological_awareness_vowel_expanded_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="false"
+                        android:layout_centerInParent="false"
+                        android:layout_centerVertical="false"
+                        android:layout_gravity="center_vertical|center_horizontal|center"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:contentDescription="@string/app_name"
+                        android:cropToPadding="false"
+                        android:gravity="center"
+                        android:scaleType="fitCenter" 
+                        android:background="#ffffff"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/phonological_awareness_vowel_expanded_image"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="bottom|right"
+                        android:src="@drawable/ic_ok" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_weight="0.9"
+                android:gravity="fill_horizontal|bottom|right" >
+
+                <ImageButton
+                    android:id="@+id/phonological_awareness_vowel_button_next"
+                    style="@style/NextButton"
+                    android:contentDescription="@string/vowel_selected"                    
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

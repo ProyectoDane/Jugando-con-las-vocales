@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/visual_perception_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_visual_perception_background"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".VisualPerceptionActivity" >
+
+    <LinearLayout
+        android:id="@+id/visual_perception_layout_first_child"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@dimen/view_visual_perception_weight"
+        android:background="@color/visual_perception_selected_vowel_background" >
+
+        <TextView
+            android:id="@+id/visual_perception_vowel_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="@string/A"
+            android:textAlignment="center"
+            android:textColor="@color/vowel_color"            
+            android:textSize="@dimen/visual_perception_vowel_text_size" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/visual_perception_layout_second_child"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"        
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <RelativeLayout
+                android:id="@+id/visual_perception_gridview_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/visual_perception_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/visual_perception_expanded_image_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/activity_visual_perception_background"
+                    android:gravity="fill"
+                    android:orientation="vertical"
+                    android:visibility="invisible" >
+
+                        <TextView
+                            android:id="@+id/visual_perception_expanded_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerInParent="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="center_vertical|center_horizontal|center"
+                            android:background="@drawable/visual_perception_item_border"
+                            android:gravity="center"
+                            android:text="@string/A"
+                            android:textAlignment="center"
+                            android:textColor="@color/vowel_color"
+                            android:textSize="@dimen/visual_perception_vowel_text_size" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/visual_perception_expanded_image"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:adjustViewBounds="false"
+                            android:background="@null"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="bottom|right"
+                            android:src="@drawable/ic_ok" />
+                    
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_weight="0.85"
+                android:gravity="fill_horizontal|bottom|right" >
+
+                <ImageButton
+                    android:id="@+id/visual_perception_button_next"                    
+                    android:contentDescription="@string/vowel_selected"                    
+                    android:visibility="invisible"
+                    style="@style/NextButton" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
