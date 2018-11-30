@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iceberg.playingwithvowels"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Apptheme" >
+        <activity
+            android:name="com.iceberg.playingwithvowels.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.iceberg.playingwithvowels.PhonologicalAwarenessActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_phonological_awareness"
+            android:parentActivityName="com.iceberg.playingwithvowels.ActivityBase" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iceberg.isdf.ActivityBase" />
+        </activity>
+        <activity
+            android:name="com.iceberg.playingwithvowels.PhonologicalAwarenessSelectVowelFragment"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_phonological_awareness"
+            android:parentActivityName="com.iceberg.playingwithvowels.ActivityBase" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iceberg.isdf.ActivityBase" />
+        </activity>
+        <activity
+            android:name="com.iceberg.playingwithvowels.PhonologicalAwarenessVowelActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_phonological_awareness"
+            android:parentActivityName="com.iceberg.playingwithvowels.ActivityBase" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iceberg.isdf.ActivityBase" />
+        </activity>
+        <activity
+            android:name="com.iceberg.playingwithvowels.PhonologicalAwarenessLevelOneActivity"
+            android:label="@string/title_activity_phonological_awareness_level_one" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.iceberg.playingwithvowels.PhonologicalAwarenessLevelTwoActivity"
+            android:label="@string/title_activity_phonological_awareness_level_two"
+            android:parentActivityName="com.iceberg.playingwithvowels.ActivityBase" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iceberg.isdf.ActivityBase" />
+        </activity>
+        <activity
+            android:name="com.iceberg.playingwithvowels.VisualPerceptionActivity"
+            android:label="@string/title_activity_visual_perception"
+            android:parentActivityName="com.iceberg.playingwithvowels.ActivityBase" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iceberg.isdf.ActivityBase" />
+        </activity>
+        <activity
+            android:name="com.iceberg.playingwithvowels.GraphomotorActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_graphomotor"
+            android:parentActivityName="com.iceberg.playingwithvowels.ActivityBase" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iceberg.isdf.ActivityBase" />
+        </activity>
+        <activity
+            android:name="com.iceberg.playingwithvowels.PhonologicalAwarenessSelectVowelActivity"
+            android:label="@string/title_activity_phonological_awareness_select_vowel"
+            android:parentActivityName="com.iceberg.playingwithvowels.ActivityBase" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iceberg.isdf.ActivityBase" />
+        </activity>
+    </application>
+
+</manifest>
